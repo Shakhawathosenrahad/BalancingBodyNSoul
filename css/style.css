@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600;700;800&family=Grand+Hotel&family=Roboto:ital,wght@0,100;0,300;0,400;1,300;1,400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Baloo Bhai 2', cursive;
+    -webkit-user-drag: none;
+}
+
+body :where(nav, .column, .links, header, .aligned, .our-stats .classes span, .email, footer) {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    height: 25px;
+    margin-top: 35px;
+    padding: 0 10%;
+    justify-content: space-between;
+    background: #e2ede8;
+    user-select: none;
+    position: relative;
+}
+
+nav .material-symbols-outlined {
+    display: none;
+    user-select: none;
+    font-size: 2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+nav > img {
+    padding: 8px;
+    width: 80px;
+    object-fit: cover;
+    background: #a7d7c5;
+    cursor: pointer;
+}
+
+nav .links {
+    height: 100%;
+    gap: 10px;
+}
+
+.links a {
+    height: 25px;
+    line-height: 25px;
+    color: #000;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: background 200ms;
+}
+
+.links a.active,
+.links a:hover {
+    background: #c7d9d5;
+}
+
+
+
+/* header */
+
+header {
+    padding: 50px 10%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px 10px;
+}
+
+header img {
+    flex: 1 1 250px;
+    max-width: 550px;
+    width: 100%;
+}
+
+header .header-text {
+    max-width: 500px;
+    flex: 1 1 300px;
+    color: #558a86;
+    text-align: center;
+}
+
+.header-text h3 {
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.header-text p {
+    margin: 15px auto;
+    font-size: 1.5rem;
+}
+
+.btn, .btn:hover, .btn:active, .btn:visited {
+    max-width: 200px;
+    width: 100%;
+    height: 30px;
+    font-size: 1.5rem;
+    line-height: 10px;
+    border: none;
+    background-color: #558a86;
+}
+
+/* shape */
+
+.shape {
+    height: 1px;
+    max-width: 1350px;
+    width: 100%;
+}
+
+.shape > img {
+    max-width: 200px;
+    width: 100%;
+    margin-top: -200px;
+    float: right;
+}
+
+
+/* our class */
+
+.choose-class {
+    width: 100%;
+    padding: 50px 10%;
+    text-align: center;
+    color: #fff;
+    background: #6c9894;
+}
+
+.choose-class > h1 {
+    font-weight: 800;
+}
+
+.choose-class > h1,
+.choose-class > p {
+    width: 70%;
+    margin: 5px auto;
+}
+
+.aligned {
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.aligned span {
+    max-width: 300px;
+    flex: 1 1 250px;
+    width: 100%;
+    padding: 5px;
+    cursor: pointer;
+    transition: 200ms ease-in;
+}
+
+.aligned span:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.aligned span img {
+    width: 100%;
+    margin: 10px 0;
+}
+
+
+/* our-stats */
+
+.our-stats {
+    padding: 80px 10%;
+    text-align: center;
+    background: url(../img/stats-bg.png) center / cover no-repeat;
+}
+
+.our-stats p {
+    width: 80%;
+    margin: 10px auto;
+}
+
+.our-stats .classes {
+    margin: 10px 0;
+}
+
+.our-stats .classes span {
+    max-width: 130px;
+    height: 130px;
+    justify-content: center;
+    flex-direction: column;
+    color: #558a86;
+    border-radius: 50%;
+    border: 2px solid #558a86;
+}
+
+.our-stats .classes span h4 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.our-stats .classes span h6 {
+    text-align: center;
+    margin: 0;
+}
+
+
+/* best instructor */
+
+.column {
+    padding: 0 10%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px 10px;
+    color: #fff;
+    background: #6c9894;
+}
+
+.column .column-text {
+    max-width: 250px;
+
+}
+
+.column-text button {
+    background: #fff;
+}
+
+.column-text button:hover {
+    background: #cac7c7;
+}
+
+.column > img {
+    max-width: 230px;
+    width: 100%;
+}
+
+/* column experience */
+
+.column.experience {
+    margin: 50px 0;
+    color: #558a86;
+    background: #fff;
+}
+
+.column.experience button {
+    max-width: 250px;
+    height: 40px;
+    background: #558a86;
+}
+
+.column.experience button:hover {
+    background: #3f6e6a;
+}
+
+/* pricing */
+
+.pricing {
+    padding: 50px 10%;
+    text-align: center;
+    color: #fff;
+    background: #558a86;
+}
+
+.pricing > h3,
+.pricing > p {
+    max-width: 65%;
+    margin: 10px auto;
+}
+
+.pricing .aligned {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.pricing .pricing-section img {
+    max-width: 80px;
+}
+
+.pricing-section span {
+    max-width: 250px;
+    color: #3f6e6a;
+    background: #fff;
+    border-radius: 5px;
+    flex-direction: column;
+}
+
+.pricing-section span:hover {
+    background: rgba(255, 255, 255, 0.897);
+    box-shadow: none;
+}
+
+.pricing-section span h3 {
+    margin: 0;
+}
+
+.pricing-section span p {
+    font-size: .8rem;
+}
+
+.pricing-section button {
+    font-size: 1rem;
+}
+
+.pricing-section button:hover {
+    font-size: 1rem;
+    background: #3f6e6a;
+}
+
+
+/* trainer */
+
+.trainer {
+    width: 100%;
+    padding: 50px 10%;
+    color: #558a86;
+    text-align: center;
+}
+
+.trainer p {
+    width: 80%;
+    margin: 10px auto;
+}
+
+p {
+    font-family: sans-serif;
+}
+
+.trainer img {
+    max-width: 200px;
+}
+
+/* newsletter */
+
+.newsletter {
+    padding: 100px 10%;
+    text-align: center;
+    color: #fff;
+    background: #3f6e6a;
+}
+
+.newsletter h2 {
+    font-size: 700;
+}
+
+.newsletter p {
+    width: 75%;
+    margin: 15px auto;
+}
+
+.newsletter .email {
+    max-width: 390px;
+    margin: 10px auto;
+}
+
+.email input {
+    width: 75%;
+    height: 100%;
+    outline: none;
+    border: none;
+    padding: 5px 30px 5px 15px;
+    border-radius: 25px;
+}
+
+.email .btn {
+    width: 35%;
+    height: 100%;
+    line-height: 25px;
+    border-radius: 25px;
+    margin-left: -30px;
+    color: #558a86;
+    background: #f4f9f4;
+    font-size: .9rem;
+}
+
+
+/* footer */
+
+footer {
+    flex-wrap: wrap;
+    padding: 50px 10%;
+    color: #6c9894;
+}
+
+footer .footer-column {
+    flex: 1 1 180px;
+    padding: 10px;
+
+}
+
+footer .footer-column:first-child {
+    flex-basis: 250px;
+}
+
+.footer-column a {
+    display: flex;
+    gap: 10px;
+    margin: 8px 0;
+    color: #6c9894;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
